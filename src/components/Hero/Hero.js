@@ -3,20 +3,23 @@ import React from 'react';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
+import Profpic from '../Profpic/Profpic';
+
 
 const Hero = (props) => (
   <>
-    <Section row nopadding>
-      <LeftSection>
-        <SectionTitle main center>
-          Welcome To <br />
-          My Personal Portfolio
-        </SectionTitle>
+    <Section >
+    <SectionTitle main center>
+          Biography <br />
+    </SectionTitle>
+      <LeftSection col-12 col-lg-4>
+      <Profpic/>
+        
         <SectionText>
-        The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+        I'm a fullstack developer who loves to build exciting applications. 
         </SectionText>
-        <Button onClick={props.handleClick}>Learn More</Button>
       </LeftSection>
+      
     </Section>
   </>
 );
